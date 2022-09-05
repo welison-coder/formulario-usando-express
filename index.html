@@ -1,0 +1,34 @@
+<form action="http://localhost:3003/usuarios" method="POST">
+    <label for="nome">nome</label>
+    <input type="text" name="nome" id=""><br>
+    <label for="senha">senha</label>
+    <input type="password" name="senha" id="">
+    <textarea name="bio" id="" cols="30" rows="10"></textarea>
+    <div>
+        <input type="radio" name="tipo" value="Admin">Admin
+        <input type="radio" name="tipo" value="Regular">Regular
+        <input type="radio" name="tipo" value="Professor">Professor
+    </div>
+    <div>
+        <input type="checkbox" name="ativo" id="">Ativo
+    </div>
+    <select name="estado" id="">
+        <option value="selecione">selecione</option>
+        <option value="ac">Acre</option>
+        <option value="ba">Bahia</option>
+        <option value="ce">Ceará</option>
+    </select>
+
+    <button>Incluir</button>
+</form>
+
+<style>
+    textarea{
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type=radio],
+    input[type=checkbox]{
+        display: inline;
+    }
+</style>
