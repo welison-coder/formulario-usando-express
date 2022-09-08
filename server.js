@@ -9,5 +9,11 @@ app.post('/usuarios',(req, resp) => {
     resp.send('parabens')
 })
 
-app.listen(3001)
+app.post('/usuarios/:id', (req, resp) => {
+    console.log(req.params.id)
+    console.log(req.body)
+    resp.send('<h1>parabéns. Usuario alterado !!!</h1>')
+})
+
+app.listen(3003)
 
